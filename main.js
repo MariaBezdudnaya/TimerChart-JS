@@ -18,6 +18,8 @@ let timer;
             updateTimer();
           }, 1000);
         } else {
+          const btn = document.getElementById("button");
+          btn.textContent = 'Start';
           timerElement.textContent = 'Over';
           clearTimeout(timer);
         }
