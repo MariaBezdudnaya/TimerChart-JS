@@ -1,25 +1,21 @@
-body {
-  margin: auto;
-}
-
 .timer-container {
-  margin: auto;
-  margin-top: 15vh;
+  margin: 10vh auto;
   width: 40vw;
-  height: 70vh;
-  padding-top: 15vh;
+  height: 50vw;
+  max-height: 730px;
+  padding-top: 5vw;
   display: flex;
   border-radius: 8px;
   background-color: #212529;
   color: #fff;
-  row-gap: 30px;
+  row-gap: 3vw;
   flex-direction: column;
   align-items: center;
 }
 
 .circular-progress {
-  min-height: 250px;
-  min-width: 250px;
+  height: 30vw;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: conic-gradient(#fff 3.6deg, #212529 0deg);
   display: flex;
@@ -29,8 +25,8 @@ body {
 .circular-progress::before {
   content: "";
   position: absolute;
-  min-height: 210px;
-  min-width: 210px;
+  height: 28vw;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: #212529;
 }
